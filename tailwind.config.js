@@ -7,9 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'xs': '0.65rem'
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        color: {
+          accent: "#ae9166",
+          primary: "#fbb520",
+          secondary: '#784800',
+          danger: "#ec1d24",
+          light: "#fefefe",
+          dark: '#222831'
+        }
       },
     },
   },
