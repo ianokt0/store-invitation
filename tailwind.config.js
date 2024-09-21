@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        'xs': '0.65rem'
+        xs: "0.65rem",
       },
       colors: {
         background: "var(--background)",
@@ -16,13 +16,13 @@ module.exports = {
         color: {
           accent: "#ae9166",
           primary: "#fbb520",
-          secondary: '#784800',
+          secondary: "#784800",
           danger: "#ec1d24",
           light: "#fefefe",
-          dark: '#222831'
-        }
+          dark: "#222831",
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

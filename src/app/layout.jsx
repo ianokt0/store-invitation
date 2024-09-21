@@ -1,7 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/layouts/Navbar/Navbar";
 import { Gabarito, Poppins } from "next/font/google";
+import Toolbar from "@/components/layouts/Toolbar/Toolbar";
 
 
 // const gabarito = Gabarito({ subsets: ["latin"] });
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       >
         <div className="container mx-auto">
           <Navbar />
+          <Toolbar/>
           {children}
         </div>
       </body>

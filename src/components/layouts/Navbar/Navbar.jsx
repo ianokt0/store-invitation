@@ -2,13 +2,13 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../../../public/banner/invitationery.png'
+import logo from '../../../../public/banner/invitationery.png'
 import InputSearch from './InputSearch'
 import Cart from './Cart'
 import Chat from './Chat'
 
 const Navbar = () => {
-    console.log(logo);
+    // console.log(logo);
     return (
         <nav className="flex flex-no-wrap lg:flex-wrap lg:py-4 justify-between py-2 w-full items-center">
             <Link href="/">
