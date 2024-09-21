@@ -4,7 +4,7 @@ import { Chats } from "@phosphor-icons/react"
 const Chat = () => {
     return (
         <div>
-            <Chats size={32} />
+            <Chats size={32} className="hover:text-color-secondary" />
         </div>
     )
 }

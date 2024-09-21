@@ -4,8 +4,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { Percent } from "@phosphor-icons/react";
 
 // local
-import Banner from "../../../../public/image/sample.jpg";
-import WelcomeCard from "@/components/container/Card/WelcomeCard";
+import { Image1, Image2, Image3, Image4 } from "../../../../public/image";
+import { WelcomeCard, CardPromotion } from "@/components/container/Card";
 
 const HomePage = () => {
   // set default di 1 atau halaman 1
@@ -36,29 +36,21 @@ const HomePage = () => {
 
   return (
     <>
-    {/* <!-- bisa ga --> */}
+      {/* <!-- bisa ga --> */}
       <div className="relative">
-        <div className="carousel w-full rounded-lg" ref={carouselRef}>
+        <div className="carousel w-full rounded-lg bg-color-dark" ref={carouselRef}>
           <div id="item1" className="carousel-item w-full">
-            <Image src={Banner} alt="image1" width="auto" height="auto" />
+            <Image src={Image3} alt="image1" width="auto" height="auto" className="w-full" />
+            {/* <Image src="/image/sample.jpg" alt="image1" width="auto" height="auto" /> */}
           </div>
           <div id="item2" className="carousel-item w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-              className="w-full"
-            />
+            <Image src={Image4} alt="image1" width="auto" height="auto" className="w-full" />
           </div>
           <div id="item3" className="carousel-item w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-              className="w-full"
-            />
+            <Image src={Image1} alt="image1" width="auto" height="auto" className="w-full" />
           </div>
           <div id="item4" className="carousel-item w-full">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-              className="w-full"
-            />
+            <Image src={Image2} alt="image1" width="auto" height="auto" className="w-full" />
           </div>
         </div>
         {/* menu carousel dan welcome card */}
@@ -68,11 +60,10 @@ const HomePage = () => {
               <a
                 key={item}
                 href={`#item${item}`}
-                className={`rounded-full ${
-                  activeItem === item
-                    ? "bg-color-secondary"
-                    : "bg-color-primary"
-                } hover:bg-color-secondary w-5 h-5`}
+                className={`rounded-full ${activeItem === item
+                  ? "bg-color-secondary"
+                  : "bg-color-primary"
+                  } hover:bg-color-secondary w-4 h-4`}
                 onClick={() => handleItemClick(item)}
               ></a>
             ))}
@@ -85,6 +76,12 @@ const HomePage = () => {
         <div className="text-xl">
           TODAY'S <span className="font-bold">SPECIAL OFFER</span>
         </div>
+      </div>
+      {/* <div className="flex gap-2">
+        <CardPromotion />
+      </div> */}
+      <div>
+      
       </div>
     </>
   );

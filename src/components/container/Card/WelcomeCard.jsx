@@ -15,7 +15,7 @@ const WelcomeCard = () => {
           <div className="font-semibold text-color-secondary text-xl">
             Hallo,
             <span className="text-color-secondary font-bold">
-                {/* name user auth */}
+              {/* name user auth */}
               Zaskia Nuraini
             </span>
           </div>

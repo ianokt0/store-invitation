@@ -2,7 +2,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../../../../public/banner/invitationery.png'
 import InputSearch from './InputSearch'
 import Cart from './Cart'
 import Chat from './Chat'
