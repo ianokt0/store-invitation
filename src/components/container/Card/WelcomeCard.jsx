@@ -4,7 +4,7 @@ import { SealPercent, Wallet } from "@phosphor-icons/react";
 const WelcomeCard = () => {
   return (
     <div className="card bg-color-primary shadow-xl w-full">
-      <div className="card-body">
+      <div className="card-body p-5 md:p-auto">
         <div className="flex items-center gap-1">
           {/* avatar */}
           <div className="avatar">
@@ -20,28 +20,28 @@ const WelcomeCard = () => {
             </span>
           </div>
         </div>
-        <div className="flex gap-4">
-          <div className="w-1/2 hover:scale-105 group">
+        <div className="flex gap-1 md:gap-2">
+          <div className="w-1/2 hover:scale-105 group overflow-hidden">
             <Link href="/voucher">
-              <div className="card bg-color-secondary group-hover:opacity-95 group-hover:z-50 w-full">
+              <div className="card bg-color-secondary group-hover:opacity-95 w-full">
                 <div className="card-body">
                   <div className="flex gap-2 items-center justify-center">
                     {/* image */}
-                    <SealPercent size={34} weight="duotone" />
-                    <div className="text-white text-2xl">voucher</div>
+                    <SealPercent size={34} weight="duotone" className="text-color-light"/>
+                    <div className="text-white lg:text-2xl text-lg">Voucher</div>
                   </div>
                 </div>
               </div>
             </Link>
           </div>
-          <div className="w-1/2 hover:scale-105 group">
+          <div className="w-1/2 hover:scale-105 group overflow-hidden">
             <Link href="/balance">
-              <div className="card bg-color-secondary group-hover:opacity-95 group-hover:z-50 w-full">
+              <div className="card bg-color-secondary group-hover:opacity-95 w-full">
                 <div className="card-body">
                   <div className="flex gap-2 items-center justify-center">
                     {/* image */}
-                    <Wallet size={34} weight="duotone" />
-                    <h2 className="text-white text-2xl">saldo</h2>
+                    <Wallet size={34} weight="duotone" className="text-color-light"/>
+                    <h2 className="text-white lg:text-2xl text-lg">Saldo</h2>
                   </div>
                 </div>
               </div>

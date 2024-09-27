@@ -12,6 +12,7 @@ const Navbar = () => {
         <nav className="flex flex-no-wrap lg:flex-wrap lg:py-4 justify-between py-2 w-full items-center">
             <Link href="/">
                 <Image
+                    className="w-32 md:w-auto"
                     src="/banner/invitationery.png"
                     width={150}
                     height={150}
